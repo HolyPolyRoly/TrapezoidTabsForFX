@@ -1,0 +1,30 @@
+/*My trapezoid-tabbed userChrome.css
+ "Just like the old days of Chrome"*/
+
+/*Make tabs trapezoid shaped*/
+.tab-line {
+  display: none;
+}
+
+.tab-background {
+  border-radius: 3px 3px 0 0;
+  transform: perspective(10px) rotateX(2.5deg);
+}
+
+/*Skew new tab button*/
+#tabs-newtab-button {
+  transform: skew(25deg);
+}
+
+/*Clean up tabs*/
+.tabbrowser-tab::before, 
+.tabbrowser-tab::after{
+  display: none !important;
+}
+
+.titlebar-spacer{
+  display: none
+}
+
+/*Uncomment the line below if you want the default look for the address bar*/
+/*@import "./megabar-fixes.css";/**/
